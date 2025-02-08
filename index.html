@@ -1,217 +1,97 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Matador Studio</title>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="logo2.0matanosfondo.png" type="image/x-icon">
-</head>
-</body>
-</html>
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        
-        }
-        header {
-            background: linear-gradient(135deg, #1a1a1a, #003366);
-            padding: 40px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            border-bottom: 2px solid #004080;
-            position: relative;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            background: linear-gradient(135deg, #333, #000080);
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #004080;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        section h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #004080;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .card {
-            background: linear-gradient(135deg, #1a1a1a, #001f3f);
-            border: 1px solid #004080;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 20px;
-            width: 300px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-        }
-        .card h3 {
-            margin-top: 0;
-        }
-        .card p {
-            line-height: 1.5;
-        }
-        .icon {
-            font-size: 4em;
-            color: #004080;
-            margin-bottom: 10px;
-        }
-        footer {
-            background: linear-gradient(135deg, #1a1a1a, #003366);
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
-            border-top: 2px solid #004080;
-        }
-        footer p {
-            margin: 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to El Matador Studio</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Servizi</a>
-        <a href="#poster">Poster</a>
-        <a href="#contact">Contatti</a>
-        <a href="#partner">Partner</a>
-    </nav>
-    <main>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Pulsanti Social</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El Matador Studio</title>
+        <link rel="icon" href="logo2.0matanosfondo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">                 
+    </head>
 
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-            <style>
-                .social-buttons {
-                    display: flex;
-                    gap: 10px;
-                }
-                .social-button {
-                    width: 40px;
-                    height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 50%;
-                    color: #fff;
-                    text-decoration: none;
-                    font-size: 20px;
-                    transition: background-color 0.3s;
-                }
-                .social-button:hover {
-                    opacity: 0.8;
-                }
-                .youtube { background: #FF0000; }
-                .twitch { background: #5900ff; }
-                .discord { background: #1645ec; }
-                .instagram { background: #f12167; }
-            </style>
-        </head>
-        <body>
-        
+    <body>
+        <script src="script.js"></script>
+        <header>
+            <h1>Welcome to El Matador Studio</h1>
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Servizi</a>
+            <a href="#poster">Poster</a>
+            <a href="#copertine">Copertine</a>
+            <a href="#contact">Contatti</a>
+            <a href="#partner">Partner</a>
+        </nav>
+        <main>
             <div class="social-buttons">
+
                 <a href="https://youtube.com/@elmatador652?si=ZQunnpb5LXKReShg" class="social-button youtube" target="_blank" title="Seguimi su YouTube">
                     <i class="fab fa-youtube"></i>
                 </a>
+
                 <a href="https://www.twitch.tv/elmatadorr88" class="social-button twitch" target="_blank" title="Seguimi su Twitch">
                     <i class="fab fa-twitch"></i>
                 </a>
+
                 <a href="https://discord.gg/mod4fivem-r-15k-887680272039022632" class="social-button discord" target="_blank" title="Unisciti al server Discord">
                     <i class="fab fa-discord"></i>
                 </a>
+
                 <a href="https://www.instagram.com/elmatadorr88?igsh=ZTExM2kwdzJoYXB3" class="social-button instagram" target="_blank" title="Seguimi su Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
-            </div>
-        
-        </body>
-        </html>
-        
 
-        <section id="home">
-            <h2>Home</h2>
-            <img src="pareteweb.png">
-        </section>
-        <section id="services">
-            <h2>Servizi</h2>
-            <div class="container">
-                <div class="card">
-                    <div class="icon"><i class="fas fa-brush"></i></div>
-                    <h3>Loghi / Grafiche</h3>
-                    <p>Realizzazione di Loghi & Grafiche su richiesta.</p>
-                    <img src="creazioniwebnosfondo.png">
-                </div>
-                <div class="card">
-                    <div class="icon"><i class="fas fa-star"></i></div>
-                    <h3>Animazioni</h3>
-                    <p>Animazioni basiche & complesse.</p>
-                    <img src="output-onlinegiftools_1.gif">
-                </div>
-                <div class="card">
-                    <div class="icon"><i class="fas fa-book"></i></div>
-                    <h3>Pacchetto Streamer</h3>
-                    <p>Pack che comprende Logo / Banner / Panels / Streaming Off & starting.</p>
-                    <img src="stremerewebbuono.png">
             </div>
-            <section id="poster">
-                <h2>Poster</h2>
-                <img src="posterweb.png">
+
+            <section id="home">
+                <h2>Home</h2>
+                <img id="imgParete" src="pareteweb.png">
+            </section>
+
+            <section id="services">
+                <h2>Servizi</h2>
+                <div class="container">
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-brush"></i></div>
+                        <h3>Loghi / Grafiche</h3>
+                        <p>Realizzazione di Loghi & Grafiche su richiesta.</p>
+                        <img src="creazioniwebnosfondo.png">
+                    </div>
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-star"></i></div>
+                        <h3>Animazioni</h3>
+                        <p>Animazioni basiche & complesse.</p>
+                        <img src="output-onlinegiftools_1.gif">
+                    </div>
+                    <div class="card">
+                        <div class="icon"><i class="fas fa-book"></i></div>
+                        <h3>Pacchetto Streamer</h3>
+                        <p>Pack che comprende Logo / Banner / Panels / Streaming Off & starting.</p>
+                        <img src="stremerewebbuono.png">
+                </div>
+                <section id="poster">
+                    <h2>Poster</h2>
+                    <img id="imgPoster" src="posterweb.png">
+            </section>
+            <section id="copertine">
+                <h2>Copertine</h2>
+                <img id="imgPoster" src="montagesito.png">
         </section>
-        <section id="contact">
-            <h2>Contatti</h2>
-            <p>Contattammi tramite discord entrando nel server Mod4FiveM, oppure contattami in privato @elmatador88.</p>
-        </section>
-    <section id="partner">
-        <h2>Partner</h2>
-        <img src="mod4fivem_X_mata.png">
-    </main>
-    <footer>
-        <p>&copy; elmatador88</p>
-    </footer>
-</body>
+            <section id="contact">
+                <h2>Contatti</h2>
+                <p>Contattammi tramite discord entrando nel server Mod4FiveM, oppure contattami in privato @elmatador88.</p>
+            </section>
+            <section id="partner">
+                <h2>Partner</h2>
+                <img id="imgPartner" src="Composizione 1.gif">
+            </section>
+
+        </main>
+        
+            <div id="box-footer">
+                <footer>
+                    <p>&copy; elmatador88</p>
+                </footer>
+            </div>
+    </body>
 </html>

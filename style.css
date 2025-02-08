@@ -1,0 +1,441 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(135deg, #1a1a1a, #003366);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #004080;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    background: linear-gradient(135deg, #333, #000080);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #004080;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background: linear-gradient(135deg, #1a1a1a, #001f3f);
+    border: 1px solid #004080;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 4em;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+#box-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+footer {
+    background: linear-gradient(135deg, #1a1a1a, #003366);
+    padding: 20px 100%;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #004080;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+/* Effetto ingresso icone social */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-button {
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInIcons 1s forwards;
+}
+
+/* Animazione di ingresso */
+@keyframes fadeInIcons {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Stile della barra di navigazione */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    background: #111; /* Sfondo scuro per contrasto */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Stile base dei link */
+nav a {
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeInNav 0.8s forwards ease-in-out;
+}
+
+/* Animazione ingresso */
+@keyframes fadeInNav {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ritardo progressivo per ogni link */
+nav a:nth-child(1) { animation-delay: 0.2s; }
+nav a:nth-child(2) { animation-delay: 0.4s; }
+nav a:nth-child(3) { animation-delay: 0.6s; }
+nav a:nth-child(4) { animation-delay: 0.8s; }
+nav a:nth-child(5) { animation-delay: 1s; }
+nav a:nth-child(6) { animation-delay: 1.2s; }
+
+/* Effetto hover con underline animato */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #1100ff; /* Colore arancione per effetto moderno */
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #7bff00;
+    transform: scale(1.1);
+}
+
+/* Effetto hover sulle icone */
+.social-button:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+/* Effetti personalizzati per ogni social */
+.youtube:hover {
+    color: #FF0000;
+}
+.twitch:hover {
+    color: #9146FF;
+}
+.discord:hover {
+    color: #7289DA;
+}
+.instagram:hover {
+    color: #E1306C;
+}
+
+
+#imgParete {
+    width: 100%;
+}
+
+#imgPoster {
+    width: 100%;
+}
+
+#imgPartner {
+    width: 100%;
+}
+/* Effetto ingresso animato */
+.card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Effetto hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Media Query per schermi piccoli (ad esempio smartphone) */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav a {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 5px;
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 1.5em;
+    }
+
+    .icon {
+        font-size: 3em;
+    }
+
+    footer {
+        padding: 10px 20px;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .social-button {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
+/* Media Query per schermi molto piccoli (ad esempio telefoni) */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: 1.3em;
+    }
+
+    .icon {
+        font-size: 2.5em;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .social-button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+/* Sezione Contatti senza rettangolo */
+#contact {
+    text-align: center;
+    padding: 100px 20px;
+    background: #000; /* Sfondo nero */
+    color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Animazione di ingresso */
+#contact.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Testo animato con effetto neon */
+.glow-text {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif; /* Font futuristico */
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #f39c12, 0 0 10px #f39c12, 0 0 20px #f39c12;
+    animation: glow 1.5s infinite alternate ease-in-out;
+    display: inline-block;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #f39c12, 0 0 10px #f39c12, 0 0 20px #f39c12;
+    }
+    to {
+        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 40px #ffcc00;
+    }
+}
+
+/* Effetto digitazione con cursore animato */
+.typing-text {
+    font-size: 1.8rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #003cff;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #1900ff;
+    animation: typing 3s steps(30, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Hover sui contatti */
+.contact-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-links a {
+    font-size: 2.5rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact-links a:hover {
+    transform: scale(1.3);
+    color: #1100ff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
